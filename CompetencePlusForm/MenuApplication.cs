@@ -11,6 +11,7 @@ using CompetencePlus.PackageStagiaires;
 using CompetencePlus.PackageGroupes;
 using CompetencePlus.PackageDB;
 using CompetencePlus.Tools;
+using CompetencePlus.PackageModules;
 
 namespace CompetencePlus
 {
@@ -68,9 +69,9 @@ namespace CompetencePlus
 
         private void validationDesInscriptionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormStagiairesConfirmerInscription form = new FormStagiairesConfirmerInscription();
+            FormGestionInscription form = new FormGestionInscription();
 
-
+            form.Show();
 
         }
 
@@ -101,6 +102,12 @@ namespace CompetencePlus
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void modulesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormeGestionModules fr = new FormeGestionModules();
+            fr.Show();
         }
     }
 }
