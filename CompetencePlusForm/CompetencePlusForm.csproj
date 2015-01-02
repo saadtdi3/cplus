@@ -169,11 +169,11 @@
     <Compile Include="PackageStagiaires\FormUpdateStagiaires.designer.cs">
       <DependentUpon>FormUpdateStagiaires.cs</DependentUpon>
     </Compile>
-    <Compile Include="PakageCompetence\FormGestionCompetence.cs">
+    <Compile Include="PakageContenuPrecision\FormGestionContenuPrecision.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PakageCompetence\FormGestionCompetence.Designer.cs">
-      <DependentUpon>FormGestionCompetence.cs</DependentUpon>
+    <Compile Include="PakageContenuPrecision\FormGestionContenuPrecision.Designer.cs">
+      <DependentUpon>FormGestionContenuPrecision.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -227,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PackageStagiaires\FormUpdateStagiaires.resx">
       <DependentUpon>FormUpdateStagiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PakageContenuPrecision\FormGestionContenuPrecision.resx">
+      <DependentUpon>FormGestionContenuPrecision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

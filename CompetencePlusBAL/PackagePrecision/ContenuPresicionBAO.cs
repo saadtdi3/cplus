@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CompetencePlus.PakageCompetence
+namespace CompetencePlus.PackagePrecision
 {
-    class CompetenceDAO
+    class ContenuPresicionBAO
     {
     }
 }

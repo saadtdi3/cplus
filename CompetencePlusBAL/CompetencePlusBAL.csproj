@@ -51,11 +51,11 @@
     <Compile Include="PackageModules\Class1.cs" />
     <Compile Include="PackageModules\ModuleBAO.cs" />
     <Compile Include="PackageNotes\NoteBAO.cs" />
+    <Compile Include="PackagePrecision\ContenuPresicionBAO.cs" />
     <Compile Include="PackagePrecision\PrecisionBAO.cs" />
     <Compile Include="PackagePrevisionSeances\Class1.cs" />
     <Compile Include="PackageSeances\Class1.cs" />
     <Compile Include="PackageStagiaires\StagiaireBAO.cs" />
-    <Compile Include="PakageCompetence\CompetenceBAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
