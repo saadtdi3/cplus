@@ -5,7 +5,8 @@ using System.Text;
 
 namespace CompetencePlus.PackagePrecision
 {
-    class ContenuPresicion
+    public class ContenuPresicion
     {
+
     }
 }
