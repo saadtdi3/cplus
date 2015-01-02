@@ -7,7 +7,7 @@ namespace CompetencePlus.PackagePrecision
 {
     public class ContenuPresicion
     {
-<<<<<<< HEAD
+
         string nom;
 
         public string Nom
@@ -48,8 +48,5 @@ namespace CompetencePlus.PackagePrecision
         {
             return this.nom;
         }
-=======
-
->>>>>>> origin/master
     }
 }
