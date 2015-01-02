@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CompetencePlus.PackageNotes
 {
-    class Class1
+    class NoteDAO
     {
     }
 }

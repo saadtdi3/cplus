@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CompetencePlus.PackageNotes
+namespace CompetencePlus.PakageCompetence
 {
-    class Class2
+    class CompetenceBAO
     {
     }
 }
