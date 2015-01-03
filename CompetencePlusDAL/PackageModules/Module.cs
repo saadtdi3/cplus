@@ -5,7 +5,13 @@ using System.Text;
 
 namespace CompetencePlus.PackageModules
 {
-    class Module
+   public class Module
     {
+       private int id;
+       private string nom;
+       public Module()
+       {
+       }
+       
     }
 }

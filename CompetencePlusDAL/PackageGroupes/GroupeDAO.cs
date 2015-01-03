@@ -13,7 +13,7 @@ namespace CompetencePlus.PackageGroupes
     {
         public  void Add(Groupe g)
         {
-            string Requete = "Insert into Groupes(Nom,Code,Description,idFiliere) values ('" +g.Nom  + "','" +g.Code+ "','" + g.Description +"',"+g.Filiere.Id +")";
+            string Requete = "Insert into Groupes(Nom,Code,Description,idFiliere) values('" +g.Nom  + "','" +g.Code+ "','" +g.Description +"',"+g.Filiere.Id +")";
             MyConnection.ExecuteNonQuery(Requete);
         }
 

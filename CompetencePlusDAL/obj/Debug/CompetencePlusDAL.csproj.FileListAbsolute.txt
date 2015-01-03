@@ -45,3 +45,4 @@ C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\Interop.AD
 C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csproj.ResolveComReference.cache
 C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.dll
 C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.pdb
+C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csprojResolveAssemblyReference.cache

@@ -11,6 +11,7 @@ using CompetencePlus.PackageStagiaires;
 using CompetencePlus.PackageGroupes;
 using CompetencePlus.PackageDB;
 using CompetencePlus.Tools;
+using CompetencePlus.PackageEmploisTemps;
 
 namespace CompetencePlus
 {
@@ -101,6 +102,12 @@ namespace CompetencePlus
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void mesEmploisDeTempsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAjouterEmploitemps f = new FormAjouterEmploitemps();
+            f.Show();
         }
     }
 }
