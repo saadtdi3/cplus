@@ -47,9 +47,11 @@
             this.mercrediradio = new System.Windows.Forms.RadioButton();
             this.mardiradio = new System.Windows.Forms.RadioButton();
             this.Lundiradio = new System.Windows.Forms.RadioButton();
+            this.seanceplanningBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.formationBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.seanceplanningBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -243,6 +245,10 @@
             this.Lundiradio.Text = "Lundi";
             this.Lundiradio.UseVisualStyleBackColor = true;
             // 
+            // seanceplanningBindingSource
+            // 
+            this.seanceplanningBindingSource.DataSource = typeof(CompetencePlus.PackageEmploisTemps.Seanceplanning);
+            // 
             // formSeancePlanning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +263,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.formationBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.seanceplanningBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,5 +288,6 @@
         private UserControltime userControltime2;
         private UserControltime userControltime1;
         private System.Windows.Forms.BindingSource formationBindingSource;
+        private System.Windows.Forms.BindingSource seanceplanningBindingSource;
     }
 }

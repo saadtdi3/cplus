@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CompetencePlus.PackageEmploisTemps;
+using CompetencePlusForm;
 
 namespace CompetencePlus.PackageEmploisTemps
 {
@@ -21,10 +22,13 @@ namespace CompetencePlus.PackageEmploisTemps
         {
             this.Dispose();
         }
+       
+
+      
 
         private void btenregistrer_Click(object sender, EventArgs e)
         {
-         
+           
             Seanceplanning s = new Seanceplanning();
             s.Id = 1;
             s.Heuredebut = userControltime1.Hour + userControltime1.Min;

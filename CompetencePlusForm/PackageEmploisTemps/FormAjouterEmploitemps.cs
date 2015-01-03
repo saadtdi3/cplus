@@ -31,14 +31,22 @@ namespace CompetencePlus.PackageEmploisTemps
             this.refresh();
            
         }
+        public Seanceplanning returnid(Seanceplanning s)
+        {
+            Seanceplanning g = (Seanceplanning)seanceplanningBindingSource.Current;
+            int ide = g.Id;
+            return g;
 
+        }
+    
         private void FormAjouterEmploitemps_Load(object sender, EventArgs e)
         {
+          
             this.refresh();
             anneeFormationBindingSource.DataSource = new PackageAnneeFormations.AnneformationDAO().select() ;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             this.refresh();
         }

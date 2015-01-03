@@ -12,7 +12,7 @@ namespace CompetencePlus.PackageEmploisTemps
     {
       public  void Add(Seanceplanning s)
      {//EmploisTemp_id
-            string Requete = "Insert into SeancePlannings(id,jour,heuredebut,heurefin) values ("+s.Id+",'"+s.Jour+"',"+s.Heuredebut+","+s.Heurefin+")";
+            string Requete = "Insert into SeancePlannings(jour,heuredebut,heurefin,Formation_id) values ('"+s.Jour+"',"+s.Heuredebut+","+s.Heurefin+","+s.Formation.Id+")";
             MyConnection.ExecuteNonQuery(Requete);
         }
 
@@ -40,6 +40,7 @@ namespace CompetencePlus.PackageEmploisTemps
                 f.Jour = read.GetString(2);
                 f.Heuredebut= read.GetInt32(3);
                 f.Heurefin = read.GetInt32(4);
+                f.Formation = new PackageFormations.FormationDAO().FindById(read.GetInt32(5));
                 ListSeancePlannings.Add(f);
             }
             MyConnection.Close();

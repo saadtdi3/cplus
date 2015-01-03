@@ -39,15 +39,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seanceplanningBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btajouter = new System.Windows.Forms.Button();
             this.heuredebutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.heurefinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.formationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.seanceplanningBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btajouter = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.anneeFormationBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -141,7 +140,6 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
             this.heuredebutDataGridViewTextBoxColumn,
             this.heurefinDataGridViewTextBoxColumn,
             this.jourDataGridViewTextBoxColumn,
@@ -151,15 +149,22 @@
             this.dataGridView1.DataSource = this.seanceplanningBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(6, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(574, 176);
+            this.dataGridView1.Size = new System.Drawing.Size(528, 176);
             this.dataGridView1.TabIndex = 0;
             // 
-            // idDataGridViewTextBoxColumn
+            // seanceplanningBindingSource
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 50;
+            this.seanceplanningBindingSource.DataSource = typeof(CompetencePlus.PackageEmploisTemps.Seanceplanning);
+            // 
+            // btajouter
+            // 
+            this.btajouter.Location = new System.Drawing.Point(509, 118);
+            this.btajouter.Name = "btajouter";
+            this.btajouter.Size = new System.Drawing.Size(101, 23);
+            this.btajouter.TabIndex = 2;
+            this.btajouter.Text = "Ajouter";
+            this.btajouter.UseVisualStyleBackColor = true;
+            this.btajouter.Click += new System.EventHandler(this.btajouter_Click);
             // 
             // heuredebutDataGridViewTextBoxColumn
             // 
@@ -201,20 +206,6 @@
             this.Column2.Name = "Column2";
             this.Column2.Width = 50;
             // 
-            // seanceplanningBindingSource
-            // 
-            this.seanceplanningBindingSource.DataSource = typeof(CompetencePlus.PackageEmploisTemps.Seanceplanning);
-            // 
-            // btajouter
-            // 
-            this.btajouter.Location = new System.Drawing.Point(509, 118);
-            this.btajouter.Name = "btajouter";
-            this.btajouter.Size = new System.Drawing.Size(101, 23);
-            this.btajouter.TabIndex = 2;
-            this.btajouter.Text = "Ajouter";
-            this.btajouter.UseVisualStyleBackColor = true;
-            this.btajouter.Click += new System.EventHandler(this.btajouter_Click);
-            // 
             // FormAjouterEmploitemps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,7 +241,6 @@
         private System.Windows.Forms.BindingSource seanceplanningBindingSource;
         private System.Windows.Forms.Button btajouter;
         private System.Windows.Forms.BindingSource anneeFormationBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn heuredebutDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn heurefinDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn jourDataGridViewTextBoxColumn;
