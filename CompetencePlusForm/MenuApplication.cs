@@ -111,6 +111,7 @@ namespace CompetencePlus
         {
             FormeGestionModules fr = new FormeGestionModules();
             fr.Show();
+        }
 
         private void mesEmploisDeTempsToolStripMenuItem_Click(object sender, EventArgs e)
         {
