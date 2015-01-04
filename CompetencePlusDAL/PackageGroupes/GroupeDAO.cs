@@ -15,6 +15,7 @@ namespace CompetencePlus.PackageGroupes
         {
             string Requete = "Insert into Groupes(Nom,Code,Description,idFiliere) values ('" +g.Nom  + "','" +g.Code+ "','" + g.Description +"',"+g.Filiere.Id +")";
             return MyConnection.ExecuteNonQuery(Requete);
+
         }
 
         public  int Update(Groupe g)
