@@ -60,6 +60,9 @@
     <Compile Include="PackageModules\Module.cs" />
     <Compile Include="PackageModules\ModuleDAO.cs" />
     <Compile Include="PackageNotes\Note.cs" />
+    <Compile Include="PackageNotes\NoteDAO.cs" />
+    <Compile Include="PackagePrecision\ContenuPrecisionDAO.cs" />
+    <Compile Include="PackagePrecision\ContenuPresicion.cs" />
     <Compile Include="PackagePrecision\Precision.cs" />
     <Compile Include="PackagePrecision\PrecisionDAO.cs" />
     <Compile Include="PackagePrevisionSeances\PrevisionSeance.cs" />

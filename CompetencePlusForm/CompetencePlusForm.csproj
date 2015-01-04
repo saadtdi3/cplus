@@ -125,7 +125,24 @@
     <Compile Include="PackageModules\FormeModule.designer.cs">
       <DependentUpon>FormeModule.cs</DependentUpon>
     </Compile>
-    <Compile Include="PackageNotes\Class2.cs" />
+    <Compile Include="PackageNotes\FormControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageNotes\FormControle.Designer.cs">
+      <DependentUpon>FormControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionControle.Designer.cs">
+      <DependentUpon>FormGestionControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageNotes\FormGestionNote.Designer.cs">
+      <DependentUpon>FormGestionNote.cs</DependentUpon>
+    </Compile>
     <Compile Include="PackagePrecision\FormeGestionPrecision.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +180,12 @@
     </Compile>
     <Compile Include="PackageStagiaires\FormUpdateStagiaires.designer.cs">
       <DependentUpon>FormUpdateStagiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PakageContenuPrecision\FormGestionContenuPrecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PakageContenuPrecision\FormGestionContenuPrecision.Designer.cs">
+      <DependentUpon>FormGestionContenuPrecision.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -228,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PackageStagiaires\FormUpdateStagiaires.resx">
       <DependentUpon>FormUpdateStagiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PakageContenuPrecision\FormGestionContenuPrecision.resx">
+      <DependentUpon>FormGestionContenuPrecision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
