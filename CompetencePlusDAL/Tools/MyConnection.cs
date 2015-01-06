@@ -21,7 +21,7 @@ namespace CompetencePlus.Tools
         ///  En mode développement la base de données doit être installé dans le chemin suivant "C:\db_cplus\db_cplus.accdb"
         ///  En mode déploiement la base de données doit être installer dans le répertoire projet
         /// string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\CompétencePlus.accdb;Persist Security Info=True";
-        static string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source= db_cplus.accdb;Persist Security Info=True";
+        static string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\db_cplus.accdb;Persist Security Info=True";
 
         
         

@@ -69,20 +69,7 @@
       <Name>CompetencePlusDAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PackageAbsences\" />
-    <Folder Include="PackageAnneeFormations\" />
-    <Folder Include="PackageDB\" />
-    <Folder Include="PackageEmploisTemps\" />
-    <Folder Include="PackageFilieres\" />
-    <Folder Include="PackageFormateurs\" />
-    <Folder Include="PackageFormations\" />
-    <Folder Include="PackageGroupes\" />
-    <Folder Include="PackagePrecision\" />
-    <Folder Include="PackagePrevisionSeances\" />
-    <Folder Include="PackageSeances\" />
-    <Folder Include="PackageStagiaires\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

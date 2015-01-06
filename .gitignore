@@ -190,3 +190,5 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 CompetencePlusForm/bin/Debug/fr/CompetencePlusForm.resources.dll
+CompetencePlusForm/bin/Debug/CompetencePlusForm.vshost.exe.manifest
+

@@ -7,12 +7,13 @@ using System.Data.OleDb;
 using System.Xml.Serialization;
 using System.IO;
 using CompetencePlus.Tools;
-
 namespace CompetencePlus.PackageDB
 {
    public class IncrementDB_DAO
    {
        
+       private string db_query_pathe = "db_query/";
+
        #region facilitateur
        /// <summary>
        /// Enregistrer l'objet IncrementationDB sans un fichier XML
@@ -74,6 +75,21 @@ namespace CompetencePlus.PackageDB
        #endregion
 
 
+       private void CopyDbQuery(string DestinationPath)
+       {
+           //Now Create all of the directories
+           foreach (string dirPath in Directory.GetDirectories(db_query_pathe, "*",SearchOption.AllDirectories))
+               Directory.CreateDirectory(dirPath.Replace(db_query_pathe, DestinationPath));
+
+           //Copy all the files & Replaces any files with the same name
+           foreach (string newPath in Directory.GetFiles(db_query_pathe, "*.*",SearchOption.AllDirectories))
+               File.Copy(newPath, newPath.Replace(db_query_pathe, DestinationPath), true);
+       
+       
+       }
+
+
+
        #region Action
        /// <summary>
        /// Exécuter la requête sur la base de donénes actuel puis l'enregistrer en XML
@@ -96,6 +112,13 @@ namespace CompetencePlus.PackageDB
        }
        public IEnumerable<IncrementationDB> SelectFromXML()
        {
+
+           // Copiage des requêtes SQL sans le répertoire de test
+           //if (!Directory.Exists(Path.Combine(Environment.CurrentDirectory, this.db_query_pathe)))
+           //{
+           //    this.CopyDbQuery(Environment.CurrentDirectory);
+           //}
+
 
            List<IncrementationDB> List = new List<IncrementationDB>();
            System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(@"db_query/");

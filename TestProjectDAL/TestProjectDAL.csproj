@@ -58,8 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FiliereDAOTest.cs" />
-    <Compile Include="FiliereTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Config.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CompetencePlusBAL\CompetencePlusBAL.csproj">
@@ -72,19 +72,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PackageAbsences\" />
-    <Folder Include="PackageAnneeFormations\" />
-    <Folder Include="PackageDB\" />
-    <Folder Include="PackageEmploisTemps\" />
-    <Folder Include="PackageFilieres\" />
-    <Folder Include="PackageFormateurs\" />
-    <Folder Include="PackageFormations\" />
-    <Folder Include="PackageGroupes\" />
-    <Folder Include="PackagePrecision\" />
-    <Folder Include="PackagePrevisionSeances\" />
-    <Folder Include="PackageSeances\" />
-    <Folder Include="PackageStagiaires\" />
-    <Folder Include="Références de test\" />
+    <None Include="OrderedTest1.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
