@@ -97,6 +97,8 @@ namespace TestProjectDAL
             filier.Titre = "T";
             filier.Description = "T";
             List<Filiere> actual = target.FindByFilier(filier);
+            Assert.IsNotNull(actual);
+
         }
 
         /// <summary>

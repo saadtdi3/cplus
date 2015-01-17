@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FiliereDAOTest.cs" />
+    <Compile Include="ModuleDAOTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Config.cs" />
   </ItemGroup>
